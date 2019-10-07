@@ -6,6 +6,8 @@
   height: 40vmin;
 }
 
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -20,3 +22,389 @@
 .App-link {
   color: #09d3ac;
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Major Mono Display', monospace;
+  background-color: #b4cdd4;
+  margin: 0;
+}
+.fullscreen-video-wrap{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.VideoPlayer, .restaurantsMcIp{
+  max-width: 600px;
+  max-height: 600px;
+}
+.t_project{
+  margin-top: 20px;
+  border-top: 1px solid white;
+}
+
+.row{
+    padding-top: 1530px;
+    width: 100%;
+    height: 47px;
+    border-bottom: 1px solid black;
+    position: block;
+}
+
+#typedtext {
+  
+   
+  letter-spacing: 6px; 
+  
+}
+
+.border{
+  border: 2px solid black;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.container{
+  text-align: center;
+  max-width: 900px;
+  margin-top: 60px;
+  
+}
+.p{
+  display: inline-block;
+}
+.my_img{
+  
+  vertical-align:top;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+.linkedIn{
+margin-right: 200px;
+}
+.nav-links{
+  margin-right: 200px;
+}
+
+
+/* NAVBAR */
+
+
+
+ .nav-header2 {
+   height: 3px;
+   background: white;
+   position: absolute;
+   margin-top: 50px;
+   -webkit-animation: dude .65s 1 forwards;
+   -moz-animation: dude .65s 1 forwards;
+   -o-animation: dude .65s 1 forwards;
+   animation: dude .65s 1 forwards;
+ }
+ @-webkit-keyframes dude {
+   0% {
+     width: 0;
+   }
+   100% {
+     width: 100%;
+   }
+ }
+ @-moz-keyframes dude {
+   0% {
+     width: 0;
+   }
+   100% {
+     width: 100%;
+   }
+ }
+ @-o-keyframes dude {
+   0% {
+     width: 0;
+   }
+   100% {
+     width: 100%;
+   }
+ }
+ @keyframes dude {
+   0% {
+     width: 0;
+   }
+   100% {
+     width: 100%;
+   }
+ }
+* {
+  box-sizing: border-box;
+}
+
+
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #b4cdd4;
+  z-index: 3;
+}
+.nav_margin{
+  margin-top: 50px;
+}
+.sticky {
+  position: fixed;
+  top:0;
+
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 200px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:700px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+
+#div1 {
+    position:relative;
+    margin:20px auto;
+    width:97%;
+    padding-bottom:20%;
+    background-color:white;
+    border:1px solid black;
+}
+#div1:before {
+    content:'';
+    position:absolute;
+    top:-1px; left:-1px;
+    border:1px solid #fff;
+    height:100%;
+    width:100%;
+    border-radius: 10%;
+}
+
+.latest{
+  text-align: center;
+  padding-top: 170px;
+}
+.speaker{
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+
+h1{
+  text-decoration: underline overline;
+  letter-spacing: 2px;
+}
+.b_project{
+  margin-top:100px;
+}
+.brooklyn_project, .game_project, .restaurants_project, .quote_project, .chalet_project, .todos_project{
+  font-family: 'Open Sans', Sans-serif;
+  max-height: 300px;
+  max-width: 500px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+}
+.brooklyn, .game, .restaurants, .quote, .chalet{
+  padding-top: 30px;
+}
+
+
+.ft_icon{
+  font-size: 64px;
+}
+
+
+#footer{
+  display: block;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 60px;
+  color:#fff;
+}
+.social{
+width:100%;
+font-size:44px
+}
+.social{
+}
+.contact{
+width:100%;
+float: left;
+}
+
+.legal_footer{
+margin-top: 20px;
+padding-bottom: 20px;
+text-align: center;
+color: white;
+border-top: 1px solid white;
+}
+.legal{
+  padding-top: 20px;
+}
+.hr_footer{
+  height:10px;
+}
+.latest{
+  padding-top: 70px;
+  font-size: 30px;
+  font-style: bold,
+}
+
+
+
+
+/* Media query */
+@media only screen and (min-width: 450px){
+  #footer{
+  display: flex;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 60px;
+  color:#fff;
+ 
+}
+}
+
+@media screen and (min-width: 300px) and (max-width: 870px){
+.t_project{
+  padding-top: 90px;
+}
+ .b_project{
+  padding-top: 90px;
+}
+.b_project{
+  padding-top: 90px;
+}
+.brooklynMcIp, .gameMcIp, .restaurantsMcIp, .quoteMcIp, .chaletMcIp, .todosMcIp{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.nav > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 50px;
+}
+}
+
+@media only screen and (max-device-width:765px){
+    .socialFooter{
+  text-align: center;
+}
+
+}
+@media only screen and (min-width: 850px) {
+  .container{
+  text-align: center;
+  max-width: 900px;
+  margin-top: 60px;
+  margin-left: 15%;
+}
+.brooklynMcIp, .gameMcIp, .restaurantsMcIp, .quoteMcIp, .chaletMcIp{
+  
+  height: 100%;
+  width: 100%;
+  margin-left: -50px;
+}
+.b_project{
+  padding-top: 90px;
+  display: flex;
+}
+.t_project{
+  padding-top: 90px;
+  display: flex;
+}
+
+}
+
+
+
+
+
+
+
+
