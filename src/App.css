@@ -7,7 +7,58 @@
 }
 
 
+nav {
+  width: 100%;
+  margin: 0;
+  top: 0;
+  background: #b4cdd4;
+  color: white;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  height: 100%;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+li:hover {
+  background: #848484;
+  color: #212121;
+}
+
+.fixed-nav {
+  position: fixed;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  padding-top: 20px;
+}
+
+.content > div {
+  margin: 10px 0;
+}
+
+Resources
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -47,8 +98,14 @@ body {
 .t_project{
   margin-top: 20px;
   border-top: 1px solid white;
+  text-align: center;
 }
-
+.headerComponent{
+  margin-top: 20px;
+}
+.top_menu_class{
+  padding-top: 0px;
+}
 .row{
     padding-top: 1530px;
     width: 100%;
@@ -77,6 +134,7 @@ body {
 }
 .p{
   display: inline-block;
+  font-family: 'Indie Flower', cursive;
 }
 .my_img{
   
@@ -94,14 +152,29 @@ margin-right: 200px;
 
 
 /* NAVBAR */
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
 
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 
  .nav-header2 {
    height: 3px;
    background: white;
-   position: absolute;
-   margin-top: 50px;
+   position: fixed;
+   margin-top: 40px;
    -webkit-animation: dude .65s 1 forwards;
    -moz-animation: dude .65s 1 forwards;
    -o-animation: dude .65s 1 forwards;
@@ -280,10 +353,9 @@ h1{
 }
 .brooklyn_project, .game_project, .restaurants_project, .quote_project, .chalet_project, .todos_project{
   font-family: 'Open Sans', Sans-serif;
-  max-height: 300px;
-  max-width: 500px;
-  margin-left: 30px;
-  margin-right: 30px;
+  max-height: 800px;
+  max-width: 700px;
+  
   text-align: center;
 }
 .brooklyn, .game, .restaurants, .quote, .chalet{
@@ -332,7 +404,98 @@ border-top: 1px solid white;
   font-size: 30px;
   font-style: bold,
 }
+.top-menu {
+    background-color: #b4cdd4;
+    min-height: 60px;
+    user-select: none;
+    transition: all 0.8s ease-in;
+    
+}
 
+.top-menu > .right {
+    float: right;
+    
+}
+
+.top-menu > .right > * {
+    margin-left: 5px;
+}
+
+.top-menu > .left {
+    float: left;
+    
+}
+
+.top-menu > .left > * {
+    margin-right: 5px;
+}
+
+.top-menu > .left > *, .top-menu > .right > * {
+    padding: 11.4px;
+    display: inline-block;
+    text-align: center;
+    min-width: 50px;
+}
+
+.top-menu *:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.top-menu .top-menu-icon {
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .top-menu {
+        max-height: 0;
+        overflow: hidden;
+    }
+.top-menu > .right {
+        display: none;
+    }
+
+    .top-menu > .left{
+      margin-top: 0;
+    }
+    .top-menu-icon {
+      width: 50px;
+      height: 50px;
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .top-menu.toggled {
+      background-color: orange;
+        padding: 60px 0 0 0;
+        min-height: 1500px;
+        transition: all 0.8s ease-in;
+
+    }
+
+    .top-menu.toggled > .left {
+        border-bottom: 1px solid black;
+        margin: 15px 0 0 0 ;
+    }
+
+    .top-menu.toggled *:not(.top-menu-lead):not(.top-menu-icon) {
+        float: none;
+        display: block !important;
+        text-align: left;
+        margin: 0;
+
+    }
+
+}
 
 
 

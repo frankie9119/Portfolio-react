@@ -16,6 +16,7 @@ const LeftComponent= (props) => {
                     <a href={props.linkToPass} target="_blank">
                                     <h1>{props.restTitle}</h1></a>
                 <p>{props.rest}</p>
+              
                 </div>
 
                 

@@ -12,7 +12,7 @@ const Todos= (props) => {
                 <p>{props.rest}</p>
                 </div>
                 <div><a href="https://todos-react-app.000webhostapp.com/" target="_blank">
-                        <video className="VideoPlayer" loop autoPlay muted>
+                        <video className="VideoPlayer restaurantsMcIp " loop autoPlay muted>
                         
                             <source src='http://francasadei.com/video/todos-video.mp4' type="video/mp4"/>
                         

@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './NavBar/NavBar';
 import Header from './Header/Header';
 import Todos from './Todos/Todos';
 import LeftComponent from './LeftComponent/LeftComponent';
@@ -60,6 +61,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <NavBar/>
         <Header/>
         <Todos rest={this.state.todos.todo} linkToPass={this.state.todos.linkTodo}/>
         <LeftComponent restMcIp={restMcIp} linkToPass={this.state.rest.restLink} restTitle={this.state.rest.restaurantsTitle} rest={this.state.rest.restaurants}/>

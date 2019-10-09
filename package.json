@@ -3,10 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
     "bootstrap": "^4.3.1",
     "react": "^16.10.2",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.10.2",
+    "react-native-svg": "^9.11.1",
+    "react-rotating-text": "^1.4.1",
     "react-scripts": "3.2.0",
     "redux": "^4.0.4",
     "video-react": "^0.14.1"
