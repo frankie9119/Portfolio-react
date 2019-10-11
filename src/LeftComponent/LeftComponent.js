@@ -5,25 +5,19 @@ import rest from './restaurantsMcIp.png';
 const LeftComponent= (props) => {
   return(
 
-<div className="t_project flex_container wrap">
-                                <div>
-                                <a href={props.linkToPass} target="_blank">
-				<img src={props.restMcIp} className="restaurantsMcIp" alt="restaurantsMcIp" /></a>
-
-
-                </div>
-                <div className="todos_project">
+            <div className="projectBlock">
+                <div>
                     <a href={props.linkToPass} target="_blank">
-                                    <h1>{props.restTitle}</h1></a>
-                <p>{props.rest}</p>
-              
+				    <img src={props.restMcIp} className="projectImg" alt="projectImg" /></a>
                 </div>
-
-                
-</div>
-
-
-  )
+                <div className="projectContent">
+                    <a href={props.linkToPass} target="_blank">
+                    <h1>{props.restTitle}</h1></a>
+                    <p>{props.rest}</p>
+                    <img src={props.icons} className="ft_icon" alt="ft_icon" />                    
+                </div>
+            </div>
+    )
 };
 
 
