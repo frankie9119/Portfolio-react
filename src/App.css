@@ -427,16 +427,21 @@ margin-top: 30px;
   width: 100%;
   text-align: center;
 }
+.social{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.legal_footer{
+  font-size: 15px;
+}
 }
 @media only screen and (min-width: 850px) {
   .container{
   text-align: center;
   max-width: 900px;
   margin-top: 60px;
-
 }
 .projectImg{
-  
   height: 100%;
   width: 100%;
   margin-left: -50px;
