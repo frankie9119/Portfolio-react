@@ -98,20 +98,24 @@ h1{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+.rotatingText{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
 
 .LinkedIn, .git{
-  font-family: arial;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 100px;
+  margin-top: 10px;
+}
+.LinkedIn:hover, .git:hover{
+  color: orange;
+  transition: all 0.8s ease;
 }
 
 
@@ -309,7 +313,9 @@ border-top: 1px solid white;
 
 */
 
-
+.footerContainer{
+    background-color: #00152A;
+}
 
 .footer{
   display: block;
@@ -329,14 +335,29 @@ float: left;
 }
 
 .contact{
+  color: white;
 width:100%;
 float: left;
+font-weight: bold;
+font-size: 20px;
 }
 
 .legal_footer{
+font-size: 20px;
+font-weight: bold;
 text-align: center;
 color: white;
 padding-bottom: 50px;
+margin-top: 30px;
+}
+.external_links{
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.external_links:hover{
+  color: orange;
+  transition: all 0.8s ease;
 }
 .hr_footer{
   height:10px;
@@ -362,7 +383,7 @@ padding-bottom: 50px;
 
 
 /* Media query */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 920px) {
   .hamburger{
     display: block !important;
   }
@@ -377,9 +398,8 @@ padding-bottom: 50px;
   margin-top: 0;
 }
 
-}
 
-@media screen and (max-width: 600px) {
+
 .top-menu.toggled {
   background-color: orange;
   padding: 60px 0 0 0;

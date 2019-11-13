@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 
 const Footer= (props) => {
   return(
-<div className="animated fadeInRight delay-1s" id="footerx">
+<div className="footerContainer animated fadeInRight delay-1s" id="footerx">
             <div className="projectFooter">
                 <div className="contact">
                     <div className="ldn"> <i className="fa fa-map-pin" aria-hidden="true"></i> London (UK)</div>
@@ -22,8 +22,9 @@ const Footer= (props) => {
 
             
             <div className="legal_footer">
-                © FC, 2019
-            </div></div>
+                © FC | 2019
+            </div>
+</div>
   )
 };
 
