@@ -11,6 +11,11 @@ body {
 h1{
   text-decoration: underline overline;
   letter-spacing: 2px;
+  color: #00152A;
+}
+h1:hover{
+  color: orange;
+  transition: all 0.8s ease;
 }
 
 
