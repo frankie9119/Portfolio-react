@@ -10,7 +10,8 @@ class NavBar extends Component {
         this.state = {
             menu_class: '',
             scrollingLock: false,
-            classToUse: '`top-menu ${this.state.menu_class}`',
+            icon: '',
+            //classToUse: '`top-menu ${this.state.menu_class}`',
         }
         this.handleScroll = this.handleScroll.bind(this)
     }
@@ -43,21 +44,35 @@ class NavBar extends Component {
         if (this.state.menu_class === '') {
             this.setState({
                 menu_class: 'toggled',
+                icon: 'is-active',
             })
         } else {
             this.setState({
                 menu_class: '',
+                icon: '',
+            })
+        }
+    }
+    setIconHamburger = () => {
+        if (this.state.icon === '') {
+            this.setState({
+                icon: 'is-active',
+            })
+        } else {
+            this.setState({
+                icon: '',
             })
         }
     }
 
-
     render = () => {
         let top_menu_class =`top-menu ${this.state.menu_class}` ;
-        let lineClass = this.state.scrollingLock ? "nav-header2" : ""
+        let lineClass = this.state.scrollingLock ? "nav-header2" : "";
+        let icon_hamburger =`hamburger hamburger--slider ${this.state.icon}` ;
+
 
         return (
-            <div>
+            <div className="navigatorBar">
                 <div className={lineClass}>
                     <div className={top_menu_class}
 
@@ -73,13 +88,24 @@ class NavBar extends Component {
                     </div>
 
                         <div className='right'>
-    						<a href="https://github.com/frankie9119" title="GitHub" target="_blank" class="git">Github</a>
-                            <a href="https://www.linkedin.com/in/francesco-casadei-264649127/" title="LinkedIn" target="_blank" class="LinkedIn">LinkedIn</a>
+    						<a href="https://github.com/frankie9119" title="GitHub" target="_blank" className="git">Github</a>
+                            <a href="https://www.linkedin.com/in/francesco-casadei-264649127/" title="LinkedIn" target="_blank" className="LinkedIn">LinkedIn</a>
                         </div>
 
-                            <img src={bars} className='top-menu-icon' onClick={this.setToggleTopMenuClass}/>
+
+
+
+<div className={icon_hamburger} onClick={this.setToggleTopMenuClass}>
+  <div class="hamburger-box">
+    <div class="hamburger-inner"></div>
+  </div>
+</div>
+                            
                         <div className='clear-fix' /></div>
                 </div>
+
+
+                
             </div>
             
         )

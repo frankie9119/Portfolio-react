@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 import NavBar from './NavBar/NavBar';
 import Header from './Header/Header';
 import Todos from './Todos/Todos';
@@ -12,7 +14,6 @@ import brooklynMcIp from './brooklynMcIp.png';
 import gameImac from './gameImac.png';
 import quoteMc from './quote_mc.png';
 import chalets from './chalets_Miphone.png';
-
 import todosIcons from './img/todosIcons.png';
 import restIcons from './img/restIcons.png';
 import gqIcons from './img/gqIcons.png';
@@ -69,14 +70,22 @@ class App extends React.Component {
       <div className="App">
       
         <NavBar/>
+        
         <Header/>
+        
         <Todos todosIcons={todosIcons} rest={this.state.todos.todo} linkToPass={this.state.todos.linkTodo}/>
+    
+        
         <LeftComponent icons={restIcons} restMcIp={restMcIp} linkToPass={this.state.rest.restLink} restTitle={this.state.rest.restaurantsTitle} rest={this.state.rest.restaurants}/>
+        
         <RightComponent icons={gqIcons} restMcIp={gameImac} linkToPass={this.state.gameBoard.gameLink} restTitle={this.state.gameBoard.gameTitle} rest={this.state.gameBoard.game}/>
         <LeftComponent icons={brookIcons} restMcIp={brooklynMcIp} linkToPass={this.state.brook.brookLink} restTitle={this.state.brook.brooklynTitle} rest={this.state.brook.brooklyn}/>
         <RightComponent icons={gqIcons} restMcIp={quoteMc} linkToPass={this.state.quote.quoteLink} restTitle={this.state.quote.quoteTitle} rest={this.state.quote.quoteGen}/>
         <LeftComponent icons={wpIcons} restMcIp={chalets} linkToPass={this.state.wpChalet.wpLink} restTitle={this.state.wpChalet.wpTitle} rest={this.state.wpChalet.wp}/>
+        
+        <Fade bottom>
         <Footer/>
+        </Fade>
         
       </div>
     );
