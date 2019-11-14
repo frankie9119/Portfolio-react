@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 
 
-const Footer= (props) => {
-  return(
-<div className="footerContainer animated fadeInRight delay-1s" id="footerx">
+const Footer = (props) => {
+    return (
+        <div className="footerContainer animated fadeInRight delay-1s" id="footerx">
             <div className="projectFooter">
                 <div className="contact">
                     <div className="ldn"> <i className="fa fa-map-pin" aria-hidden="true"></i> London (UK)</div>
@@ -16,16 +16,11 @@ const Footer= (props) => {
                     <a className="external_links email" id="email" rel="me" title="email" data-email="fran casadei gmail com" href="mailto:fran.casadei@gmail.com"><i class="far fa-envelope"></i></a>
                 </div>
             </div>
-
-
-                
-
-            
             <div className="legal_footer">
                 © FC | 2019
             </div>
-</div>
-  )
+        </div>
+    )
 };
 
 

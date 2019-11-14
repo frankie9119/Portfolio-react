@@ -59,37 +59,25 @@ class App extends React.Component {
         wp: 'A website that publicizes chalets to rent and on sale. Chalets in the Aspen area, description, price, location. Choosed a clean theam, integrated plugins, implemented CSS.',
         wpLink: 'http://chaletsandcaviar.altervista.org/',
       },
-            
-            
 
         }
-
 
   render() {
     return (
       <div className="App">
-      
         <NavBar/>
-        
         <Header/>
-        
         <Todos todosIcons={todosIcons} rest={this.state.todos.todo} linkToPass={this.state.todos.linkTodo}/>
-    
-        
         <LeftComponent icons={restIcons} restMcIp={restMcIp} linkToPass={this.state.rest.restLink} restTitle={this.state.rest.restaurantsTitle} rest={this.state.rest.restaurants}/>
-        
         <RightComponent icons={gqIcons} restMcIp={gameImac} linkToPass={this.state.gameBoard.gameLink} restTitle={this.state.gameBoard.gameTitle} rest={this.state.gameBoard.game}/>
         <LeftComponent icons={brookIcons} restMcIp={brooklynMcIp} linkToPass={this.state.brook.brookLink} restTitle={this.state.brook.brooklynTitle} rest={this.state.brook.brooklyn}/>
         <RightComponent icons={gqIcons} restMcIp={quoteMc} linkToPass={this.state.quote.quoteLink} restTitle={this.state.quote.quoteTitle} rest={this.state.quote.quoteGen}/>
         <LeftComponent icons={wpIcons} restMcIp={chalets} linkToPass={this.state.wpChalet.wpLink} restTitle={this.state.wpChalet.wpTitle} rest={this.state.wpChalet.wp}/>
-        
         <Fade bottom>
-        <Footer/>
+          <Footer/>
         </Fade>
-        
       </div>
     );
   }
 }
-
 export default App;
