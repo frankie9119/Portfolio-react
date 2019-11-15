@@ -5,6 +5,8 @@ import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import NavBar from './NavBar/NavBar';
 import Header from './Header/Header';
+import Technologies from './Technologies/Technologies';
+import Latest from './Latest/Latest';
 import Todos from './Todos/Todos';
 import LeftComponent from './LeftComponent/LeftComponent';
 import RightComponent from './RightComponent/RightComponent';
@@ -18,7 +20,7 @@ import todosIcons from './img/todosIcons.png';
 import restIcons from './img/restIcons.png';
 import gqIcons from './img/gqIcons.png';
 import brookIcons from './img/brookIcons.png';
-import wpIcons from './img/wpIcons.png';
+import wpIcons from './img/wpIcon.png';
 
 
 
@@ -67,6 +69,8 @@ class App extends React.Component {
       <div className="App">
         <NavBar/>
         <Header/>
+        <Technologies/>
+        <Latest/>
         <Todos todosIcons={todosIcons} rest={this.state.todos.todo} linkToPass={this.state.todos.linkTodo}/>
         <LeftComponent icons={restIcons} restMcIp={restMcIp} linkToPass={this.state.rest.restLink} restTitle={this.state.rest.restaurantsTitle} rest={this.state.rest.restaurants}/>
         <RightComponent icons={gqIcons} restMcIp={gameImac} linkToPass={this.state.gameBoard.gameLink} restTitle={this.state.gameBoard.gameTitle} rest={this.state.gameBoard.game}/>

@@ -272,16 +272,46 @@ h1:hover {
 /*END - NAV-BAR*/
 
 /*BLOCKS*/
+.tech_p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 80px;
+}
+.tech_icons {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-size: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.tech_icons_b{
+    height: 100px;
+    width: 100px;
+    float:left; 
+    display:inline;
+}
+.tech_icons:hover{
+    color: orange;
+    transition: all 0.8s ease;
+}
 .VideoPlayer,
 .projectImg {
     height: 100%;
     width: 100%;
     text-align: center;
 }
-
+.techBlock{
+    border-top: 1px solid white;
+    text-align: center;
+    background-color: #00152A;
+    
+}
 .projectBlock,
 .projectFooter {
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     border-top: 1px solid white;
     text-align: center;
 }
@@ -435,7 +465,9 @@ h1:hover {
 }
 
 @media screen and (min-width: 300px) and (max-width: 870px) {
-
+    .rotatingText{
+      margin-left: 0;
+    }
     .projectBlock,
     .projectFooter {
         padding-top: 90px;
@@ -464,7 +496,6 @@ h1:hover {
         max-width: 900px;
         margin-top: 60px;
     }
-
     .projectImg {
         height: 100%;
         width: 100%;

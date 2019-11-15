@@ -1,6 +1,7 @@
 import React from 'react';
 import me from './me3.png';
-import speaker3 from './speaker3.png';
+import Fade from 'react-reveal/Fade';
+
 
 
 class Header extends React.Component {
@@ -21,10 +22,7 @@ class Header extends React.Component {
                     <p>I am looking for career opportunity.</p>
                     <p>Code is my passion, my life style and I just love it! </p>
                 </div>
-                <div className="latest">
-                    <img src={speaker3} alt="speaker" className="speaker"/>
-                    <p>Latest work</p>
-                </div> 
+
             </div>      
         )
     }
