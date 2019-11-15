@@ -10,7 +10,7 @@ const Technologies = (props) => {
             <div className="techBlock">
                 <p className="tech_p">I am mainly working with this technologies:</p>
                 <Fade down>
-                <i className="tech_icons fab fa-js"></i>
+                <i className="tech_icons fab fa-js-square"></i>
                 </Fade>
                 <Fade up>
                 <i className="tech_icons fab fa-react"></i>
