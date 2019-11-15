@@ -22,7 +22,7 @@ const Technologies = (props) => {
                 <i className="tech_icons fab fa-css3"></i> 
                 </Fade>
                 <Fade down>
-                <i className="tech_icons fal fa-camera"></i>
+                <i className="tech_icons fab fa-bootstrap"></i>
                 </Fade>
                 <Fade up>
                 <i className="tech_icons fab fa-wordpress"></i>
