@@ -26,10 +26,7 @@ const Technologies = (props) => {
                 </Fade>
                 <Fade up>
                 <i className="tech_icons fab fa-wordpress"></i>
-                </Fade>
-                <Fade down>
-                <i className="tech_icons fab fa-map-marked"></i> 
-                </Fade>      
+                </Fade>    
             </div>
           
     )
