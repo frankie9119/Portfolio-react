@@ -19,7 +19,7 @@ const Todos= (props) => {
             <div>
             	<a href="https://todos-react-app.000webhostapp.com/" target="_blank">
                     <video className="VideoPlayer projectImg " loop autoPlay muted>
-                    	<source src='http://francasadei.com/video/todos-video.mp4' type="video/mp4"/>
+                    	<source src='http://francasadei.com/static/media/TodosVideo.mp4' type="video/mp4"/>
                     </video>
                 </a>
             </div>
