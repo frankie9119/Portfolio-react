@@ -67,7 +67,7 @@ class NavBar extends Component {
 
     render = () => {
         let top_menu_class = `top-menu ${this.state.menu_class}`;
-        let lineClass = this.state.scrollingLock ? "nav-header2" : "";
+        let lineClass = this.state.scrollingLock ? "nav-header22" : "";
         let icon_hamburger = `hamburger hamburger--slider ${this.state.icon}`;
 
 

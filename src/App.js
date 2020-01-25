@@ -35,7 +35,7 @@ class App extends React.Component {
       rest: {
         restaurants: 'A Google Maps map loaded with the Google Maps API. A list of restaurants on the right side of the page that are within the area displayed on the map. Add a review about an existing restaurant. Add a restaurant by clicking on a specific place on the map.',
         restaurantsTitle:'Restaurants nearby Project',
-        restLink: 'https://restreview.000webhostapp.com/',
+        restLink: 'https://frankie9119.github.io/ReviewRestaurant/',
       },
 
       brook:{
@@ -47,7 +47,7 @@ class App extends React.Component {
       gameBoard:{
         gameTitle: 'Turn Based Board Game Project',
         game: 'Randomly generating the game map with obstacles, players and weapons. For each turn, the active player has up to three moves to do (horizontally or vertically) before ending their turn. If a player passes over a box containing a weapon, they leave their current weapon on site and replace it with the new one. If a player passes over the other player a battle begins.',
-        gameLink :'https://franvideogame.000webhostapp.com/',
+        gameLink :'https://frankie9119.github.io/turnBasedGame/',
       },
 
       quote:{
